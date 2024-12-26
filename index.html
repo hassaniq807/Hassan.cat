@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All About Cats</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>All About Cats</h1>
+      <nav>
+        <button onclick="showSection('breeds')" class="nav-btn">Cat Breeds</button>
+        <button onclick="showSection('interests')" class="nav-btn">Cat Interests</button>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section id="breeds" class="section">
+        <h2>Famous Cat Breeds</h2>
+        <div class="cat-grid" id="catBreedsGrid"></div>
+      </section>
+
+      <section id="interests" class="section hidden">
+        <h2>What Cats Love</h2>
+        <div class="interests-container" id="catInterests"></div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
